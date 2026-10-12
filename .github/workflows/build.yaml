@@ -104,7 +104,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           version: '21'
-          style: ''
+          style: 'file'
           tidy-checks: ''
           database: build/wasm
           lines-changed-only: true
