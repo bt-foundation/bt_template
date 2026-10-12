@@ -67,7 +67,7 @@ jobs:
       - name: Build (Linux)
         run: cmake --build build --config Release
   
-  build-wasm:
+  build-wasm-plus-clang-tidy:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -109,6 +109,7 @@ jobs:
           database: build/wasm
           lines-changed-only: true
           step-summary: true
+          tidy-review: true
 
       - name: Fail if clang-tidy reported anything
         if: steps.linter.outputs.clang-tidy-checks-failed > 0
