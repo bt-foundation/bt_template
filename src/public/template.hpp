@@ -2,7 +2,6 @@
 
 #include <print>
 
-namespace bt::tmpl8
-{
-    void example_fun(int num);
-} // namespace bt_template
+namespace bt::tmpl8 {
+void example_fun(int num);
+} // namespace bt::tmpl8
