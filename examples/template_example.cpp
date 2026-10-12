@@ -2,6 +2,6 @@
 
 auto main() -> int
 {
-    bt::tmpl8::example_fun();
+    bt::tmpl8::example_fun(0);
     return 0;
 }
