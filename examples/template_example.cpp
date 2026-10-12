@@ -2,6 +2,6 @@
 
 int main()
 {
-    bt::tmpl8::example_fun();
+    bt::tmpl8::Example_fun();
     return 0;
 }
