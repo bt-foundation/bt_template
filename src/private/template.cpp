@@ -3,7 +3,7 @@
 
 namespace bt::tmpl8
 {
-    void example_fun()
+    void example_fun(int num)
     {
         bt::core::example_fun();
     }
