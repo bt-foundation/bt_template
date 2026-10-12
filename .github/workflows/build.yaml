@@ -107,7 +107,7 @@ jobs:
           style: 'file'
           tidy-checks: ''
           database: build/wasm
-          lines-changed-only: true
+          files-changed-only: true
           step-summary: true
           tidy-review: true
 
