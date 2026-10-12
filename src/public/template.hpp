@@ -4,5 +4,5 @@
 
 namespace bt::tmpl8
 {
-    void Example_fun();
+    void example_fun();
 } // namespace bt_template

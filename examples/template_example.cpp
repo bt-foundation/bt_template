@@ -1,7 +1,7 @@
 #include "template.hpp"
 
-int main()
+auto main() -> int
 {
-    bt::tmpl8::Example_fun();
+    bt::tmpl8::example_fun();
     return 0;
 }
