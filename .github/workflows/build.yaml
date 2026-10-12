@@ -98,7 +98,8 @@ jobs:
           mkdir bin/wasm
           emcc -g build/wasm/libbt_template.a -o bin/wasm/template.js
 
-      - uses: cpp-linter/cpp-linter-action@v2
+      - name: Setup clang-tidy
+        uses: cpp-linter/cpp-linter-action@v2
           id: linter
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
