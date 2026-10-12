@@ -105,6 +105,7 @@ jobs:
         with:
           version: '21'
           style: file
+          auto-fix: 'true'
           tidy-checks: ''
           database: build/wasm
           files-changed-only: true
