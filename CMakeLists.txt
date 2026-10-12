@@ -3,6 +3,8 @@ CMake_Minimum_Required(VERSION 4.0.0)
 # Change name here 
 Set(PROJECT_NAME bt_template)
 
+Set(CMAKE_EXPORT_COMPILE_COMMANDS ON CACHE INTERNAL "")
+
 Project(${PROJECT_NAME} VERSION 0.0.1 LANGUAGES CXX)
 
 option(${PROJECT_NAME}_STANDALONE "Build the project by itself" ON)
