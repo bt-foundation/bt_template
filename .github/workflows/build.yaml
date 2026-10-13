@@ -36,8 +36,7 @@ jobs:
         run: |
           cmake -S . -B build `
             -G "Visual Studio 18 2026" `
-            -A x64 `
-            -DTSKR_BUILD_EXAMPLES_ALL=1
+            -A x64
 
       - name: Build (Windows)
         run: cmake --build build --config Release
@@ -66,8 +65,7 @@ jobs:
       - name: Configure (Linux)
         run: |
           cmake -S . -B build \
-            -G Ninja \
-            -DTSKR_BUILD_EXAMPLES_ALL=1
+            -G Ninja
 
       - name: Build (Linux)
         run: cmake --build build --config Release
