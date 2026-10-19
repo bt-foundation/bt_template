@@ -34,9 +34,7 @@ jobs:
 
       - name: Configure with CMake (Visual Studio 18 2026)
         run: |
-          cmake -S . -B build
-            -G "Visual Studio 18 2026"
-            -A x64
+          cmake -S . -B build -G "Visual Studio 18 2026" -A x64
 
       - name: Build (Windows)
         run: cmake --build build --config Release
@@ -68,8 +66,7 @@ jobs:
 
       - name: Configure (Linux)
         run: |
-          cmake -S . -B build
-            -G Ninja
+          cmake -S . -B build -G Ninja
 
       - name: Build (Linux)
         run: cmake --build build --config Release
