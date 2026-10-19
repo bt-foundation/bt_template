@@ -14,7 +14,7 @@ on:
         - dev
 
 jobs:
-  build-and-test-windows:
+  windows-build-and-test:
     runs-on: windows-latest
     strategy:
       fail-fast: false
@@ -45,7 +45,7 @@ jobs:
         working-directory: ${{github.workspace}}/build/win64
         run: ctest
 
-  build-and-test-linux:
+  linux-build-and-test:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -78,7 +78,7 @@ jobs:
         working-directory: ${{github.workspace}}/build/linux64
         run: ctest
   
-  build-and-test-wasm-plus-clang-tidy:
+  wasm-build-and-test-plus-clang-tidy:
     runs-on: ubuntu-latest
     permissions:
       contents: write
