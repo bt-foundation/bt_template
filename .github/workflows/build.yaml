@@ -34,7 +34,7 @@ jobs:
 
       - name: Configure with CMake (Visual Studio 18 2026)
         run: |
-          IF NOT EXIST "build" mkdir "build"
+          mkdir "build"
           cd build
           cmake --preset "Windows Debug" ..\CMakeLists.txt
 
