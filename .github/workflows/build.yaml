@@ -40,8 +40,7 @@ jobs:
         run: cmake --build build/win64 --config Release
 
       - name: Run tests
-        working-directory: ${{github.workspace}}/build/win64
-        run: ctest
+        run: cd build/win64 && ctest
 
   build-and-test-linux:
     runs-on: ubuntu-latest
