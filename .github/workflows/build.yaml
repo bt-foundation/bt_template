@@ -37,7 +37,7 @@ jobs:
           cmake -S . -B build/win64 -G "Visual Studio 18 2026" -A x64
 
       - name: Build (Windows)
-        run: cmake --build build --config Release
+        run: cmake --build build/win64 --config Release
 
       - name: Run tests
         working-directory: ${{github.workspace}}/build/win64
@@ -66,7 +66,7 @@ jobs:
 
       - name: Configure (Linux)
         run: |
-          cmake -S . -B build -G Ninja
+          cmake -S . -B build/linux64 -G Ninja
 
       - name: Build (Linux)
         run: | 
