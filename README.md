@@ -1,5 +1,11 @@
 # bt_template - A template repository for the development of BiTurbo engine plugins and libraries
 
+## Requirements
+
+* `CMake`
+* `Build generator of choice (VS or Ninja or whichever CMake supports)`
+* `Emscripten` for WASM builds 
+
 ## Folder structure
 
 ```
