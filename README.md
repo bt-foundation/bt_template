@@ -51,6 +51,8 @@ bt_template_BUILD_TESTS // If set to "ON" will build tests as well. Set to "ON" 
 
 ## Helper scripts
 
+TODO
+
 ## How to use
 
 1. Create a new repository with this repository as its template
@@ -92,11 +94,15 @@ Create_Module(
 
 ### Examples
 
+TODO
+
 ### Tests
+
+TODO
 
 ### Notes
 
-* by default when adding a module, the template exposes a variable in the format <project_name>_Include_Dirs, so if you'd like to use and include other projects from the bt_ ecosystem, you can easily do so.
+* By default when adding a module, the template exposes a variable in the format project_name_Include_Dirs, so if you'd like to use and include other projects from the bt_ ecosystem, you can easily do so.
 * It is not recommended to modify the funcs.cmake if pulling in other libraries that define the same functions. Since dependency resolving comes before everything else, CMake will override the funcs with the ones added latest.
 
 ## TODO & Known issues:
